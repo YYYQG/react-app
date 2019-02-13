@@ -1,19 +1,10 @@
 import React,{Component} from 'react'
 import './App.css';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import {Button} from 'antd';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>App</h1>
-                <ul>
-                    <li><Link to="/home"/>home</li>
-                    <li><Link to="/about"/>about</li>
-                </ul>
-            </div>
-        );
-    }
-}
-
+const App = () => (
+    <div className='App'>
+        <Button type='primary' >Button</Button>
+    </div>
+)
 export default App;
